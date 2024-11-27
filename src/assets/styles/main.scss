@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply text-white bg-gray-950;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.title {
+  @apply text-3xl font-bold;
+}
+
+.page {
+  @apply py-20;
+}
+
+.btn {
+  @apply h-10 flex items-center justify-center rounded-lg bg-gray-600 hover:bg-gray-700 transition duration-300 cursor-pointer;
+
+  &-ico {
+    @apply w-10;
+  }
+
+  &-primary {
+    @apply px-6 text-base font-medium;
+  }
+
+  &[disabled] {
+    @apply opacity-50 pointer-events-none;
+  }
+}
+
+.html-base {
+  line-height: 1.75em;
+
+  br {
+    display: none;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin-bottom: 40px;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  li {
+    margin-left: 20px;
+    list-style-type: disc;
+  }
+
+  img {
+    object-fit: contain;
+  }
+}
